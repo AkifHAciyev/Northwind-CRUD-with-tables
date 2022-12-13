@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<a href="../page1/index.html" class="btn">Category List</a>
+				<a href="../page3/customer.html" class="btn">Customer List</a>
+				<a href="../page3/supplier.html" class="btn">supplier List</a>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Customer Id</th>
+						<th>Employeeld</th>
+						<th>Order Date</th>
+					</tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+			</table>
+		</div>
+	</body>
+	<script src="order.js"></script>
+	<script src="../network.js"></script>
+</html>
