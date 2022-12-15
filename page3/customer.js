@@ -41,6 +41,15 @@ function showList() {
 	});
 }
 
+function itemUpdate(element) {
+	isUpdate = true;
+	idUpdateBtn = element.id;
+	companyName.value = element.companyName;
+	contactName.value = element.contactName;
+	contactTitle.value = element.contactTitle;
+	console.log(element.id);
+}
+
 function itemDelete(id) {
 	network.delete('/suppliers', id).then(() => {
 		showList();
